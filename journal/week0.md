@@ -31,6 +31,10 @@ aws --version
 I created an IAM user and assigned access key, proof that it's working:
 ![AWS CLI sts get-caller-identity proof](week0-files/aws-cli-proof-sts-get-caller-identity.png)
 
+### CloudShell
+I tried also cloud shell, pretty nice alternative to the local AWS cli installation for quick operations.
+![AWS CloudShell](week0-files/aws-cloud-shell.png)
+
 ### Create a Billing Alarm
 I created my own Billing Alarm.
 
