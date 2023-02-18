@@ -37,9 +37,11 @@ I tried also cloud shell, pretty nice alternative to the local AWS cli installat
 
 ### Create a Billing Alarm
 I created my own Billing Alarm.
+![Billing Alarm set](week0-files/billing-alarm-set.png)
 
 ### Create a Budget
 I created my own Budget for 10€.
+![Budget set](week0-files/budget-set.png)
 
 ### Recreate Logical Architecture
 ![Logical Architecture](week0-files/logical-architecture-recreation-diagram.png)
