@@ -15,6 +15,12 @@ for backend [backend](http://127.0.0.1:4567/api/activities/home) and [frontend](
 - [x] Run the dockerfile CMD as an external script
 Followed best practices from the [dockerfile best practices page](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) and used the entrypoint
 - [ ] Push and tag a image to DockerHub (they have a free tier)
+```bash
+docker image push valentinnasta/backend-flask:1.0.0
+docker image push valentinnasta/frontend-react-js:1.0.0
+```
+Link on dockerhub for the [backend-flask docker image](https://hub.docker.com/r/valentinnasta/backend-flask).
+Link on dockerhub for the [frontend-react-js docker image](https://hub.docker.com/r/valentinnasta/frontend-react-js).
 - [ ] Use multi-stage building for a Dockerfile build
 - [ ] Implement a healthcheck in the V3 Docker compose file
 - [ ] Research best practices of Dockerfiles and attempt to implement it in your Dockerfile
