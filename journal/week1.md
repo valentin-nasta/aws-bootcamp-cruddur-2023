@@ -21,7 +21,19 @@ docker image push valentinnasta/frontend-react-js:1.0.0
 ```
 Link on dockerhub for the [backend-flask docker image](https://hub.docker.com/r/valentinnasta/backend-flask).
 Link on dockerhub for the [frontend-react-js docker image](https://hub.docker.com/r/valentinnasta/frontend-react-js).
-- [ ] Use multi-stage building for a Dockerfile build
+- [x] Use multi-stage building for a Dockerfile build
+Followed instructions from this [multi stage page](https://docs.docker.com/build/building/multi-stage/)
+and this [stackoverflow post](https://stackoverflow.com/questions/48543834/how-do-i-reduce-a-python-docker-image-size-using-a-multi-stage-build) to get the venv trick.
+I reduced the size of the docker images from
+```text
+valentinnasta/frontend-react-js   1.0.0     e5fd63758ff9   12 minutes ago   1.19GB
+valentinnasta/backend-flask       1.0.0     42280694047e   13 minutes ago   129MB
+``` 
+to
+```text
+valentinnasta/backend-flask       1.0.1     cf6e6e270767   About a minute ago   71.8MB
+valentinnasta/frontend-react-js   1.0.1     6772550e3c0c   30 seconds ago      353MB
+```
 - [ ] Implement a healthcheck in the V3 Docker compose file
 - [ ] Research best practices of Dockerfiles and attempt to implement it in your Dockerfile
 - [ ] Learn how to install Docker on your localmachine and get the same containers running outside of Gitpod / Codespaces
