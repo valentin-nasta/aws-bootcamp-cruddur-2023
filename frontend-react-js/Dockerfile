@@ -21,5 +21,4 @@ RUN npm install
 EXPOSE ${PORT}
 
 # command to run when launching the container
-# npm start
-CMD ["npm", "start"]
+ENTRYPOINT ["/frontend-react-js/entrypoint.sh"]

@@ -25,5 +25,4 @@ COPY . .
 EXPOSE ${PORT}
 
 # command to run when launching the container
-# python3 -m flask run --host=0.0.0.0 --port=4567
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
+ENTRYPOINT ["/backend-flask/entrypoint.sh"]
